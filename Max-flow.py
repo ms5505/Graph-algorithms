@@ -10,7 +10,7 @@ import networkx as nx
 G = nx.Graph()
 
 # reading in the graph of US states
-usa = open('/Users/melindasong/Documents/@Columbia/Algorithms for Data Science/HW/contiguous-usa.dat.txt')
+usa = open('contiguous-usa.dat.txt')
 for line in usa:
     s1, s2 = line.strip().split()
     G.add_edge(s1, s2)
